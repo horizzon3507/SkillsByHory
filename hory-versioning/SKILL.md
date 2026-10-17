@@ -1,19 +1,19 @@
 ---
 name: hory-versioning
-description: Apply Option-family changelog and versioning style (v tags, alpha/beta/stable channels, mixed m releases, surface sections, human summary lines). Use when creating or updating CHANGELOG.md / VERSIONING.md, cutting a release, or the user mentions Option-style versioning, channels, or mixed releases.
+description: Apply Hory-style changelog and versioning rules (v tags, alpha/beta/stable channels, mixed m releases, surface sections, human summary lines). Use when creating or updating CHANGELOG.md / VERSIONING.md, cutting a release, or the user mentions Hory-style versioning, channels, or mixed releases.
 ---
 
-# Option versioning
+# Hory versioning
 
-Write and migrate changelogs in the **Option** family style. Match the closest example below; adapt surface names to the project (CLI, Desktop, GNOME, Web, GTK, …).
+Write and migrate changelogs in the **Hory** style. Match the closest example below; adapt surface names to the project (CLI, Desktop, GNOME, Web, GTK, …).
 
 ## Examples (read before writing)
 
 | File | Shape | Use when |
 |------|--------|----------|
 | [examples/example-multi-surface.md](examples/example-multi-surface.md) | Multi-surface (CLI + Desktop) with `m` | App ships more than one installable surface |
-| [examples/example-gnome.md](examples/example-gnome.md) | Single surface **GNOME** | GTK / desktop-only app (e.g. optionTerm) |
-| [examples/example-cli.md](examples/example-cli.md) | Single surface **CLI** | Terminal-only app (e.g. optionFiles) |
+| [examples/example-gnome.md](examples/example-gnome.md) | Single surface **GNOME** | GTK / desktop-only app |
+| [examples/example-cli.md](examples/example-cli.md) | Single surface **CLI** | Terminal-only app |
 
 **Always open the matching example** and mirror its structure (intro, `<details>` versioning blurb, headings, summary line, bullets). Do not invent a parallel layout.
 
@@ -21,7 +21,7 @@ Write and migrate changelogs in the **Option** family style. Match the closest e
 
 1. **Detect surfaces** from the repo (binaries, desktop app, web, GTK, …). Pick multi-surface / GNOME / CLI example accordingly.
 2. **Locate changelog** — prefer `CHANGELOG.md` at repo root. If missing, create one from the chosen example (replace product-specific names/paths with this project’s).
-3. **If a changelog already exists** — keep historical facts; rewrite headings and entry shape to Option style. Preserve dates; convert to `DD/MM/YYYY` in headings. Add or refresh the top intro + `<details>` block to match the example (project surfaces, not Music/Term/Files copy-paste blindly).
+3. **If a changelog already exists** — keep historical facts; rewrite headings and entry shape to Hory style. Preserve dates; convert to `DD/MM/YYYY` in headings. Add or refresh the top intro + `<details>` block to match the example (project surfaces — write them fresh, never copy-paste from another project).
 4. **New release entry** — prepend under the details block:
    - Heading: `## vX.Y.Z[m][-channel] · DD/MM/YYYY`
    - One short summary sentence ending in human prose naming surface(s), channel, date, and tag again.
@@ -40,4 +40,4 @@ Write and migrate changelogs in the **Option** family style. Match the closest e
 
 ## Libraries / SDKs
 
-Plain SemVer on the package registry (e.g. crates.io). No surfaces, no `m`, no channel theater in the changelog unless the user explicitly wants Option app-style docs anyway.
+Plain SemVer on the package registry (e.g. crates.io). No surfaces, no `m`, no channel theater in the changelog unless the user explicitly wants Hory app-style docs anyway.

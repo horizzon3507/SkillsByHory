@@ -7,11 +7,11 @@ We follow [Semantic Versioning](https://semver.org/) and [Keep a Changelog](http
 
 Every version string starts with `v` (required), e.g. `v0.2.10`, `v0.1.4-beta`.
 
-Here the installable surfaces are **CLI** and **Desktop**. Other Option apps swap in their own names the same way — e.g. **GTK**, **Web**, **GNOME** — whatever you actually ship.
+Here the installable surfaces are **CLI** and **Desktop**. Other apps swap in their own names the same way — e.g. **GTK**, **Web**, **GNOME** — whatever you actually ship.
 
 | Part | What you install | Example |
 | --- | --- | --- |
-| **CLI** | `optmusic` / `msc` in the terminal | `v0.2.10` |
+| **CLI** | `yourapp` / `yapp` in the terminal | `v0.2.10` |
 | **Desktop** | the visual app | `v0.1.4-beta` |
 
 A new CLI does not always mean a new Desktop app, and the other way around.
@@ -40,27 +40,27 @@ Desktop bundle id rename, with a matching CLI identity touch. This version was m
 
 ### Desktop
 
-- Bundle identifier is now `io.option.music` (was `com.aefireflylabs.optmusic`). Reinstall the `.desktop` file if an old install still shows up under the previous id.
+- Bundle identifier is now `io.hory.yourapp` (was `com.example.oldapp`). Reinstall the `.desktop` file if an old install still shows up under the previous id.
 - Various other small tweaks
 
 ### CLI
 
-- Help / about text now mention the same `io.option.music` family id where relevant.
+- Help / about text now mention the same `io.hory.yourapp` family id where relevant.
 - Various other small tweaks
 
 ## v0.2.9m-beta · 29/07/2026
 
-Shared config path move under `~/.option/music/`. This version was made for both desktop and CLI with a beta release channel on 29/07/2026 (v0.2.9m-beta).
+Shared config path move under `~/.hory/yourapp/`. This version was made for both desktop and CLI with a beta release channel on 29/07/2026 (v0.2.9m-beta).
 
 ### Desktop
 
-- Settings UI and on-disk state read/write the new `~/.option/music/` layout (config, cache, playlists).
-- First launch migrates leftover data from `~/option/music/` when present.
+- Settings UI and on-disk state read/write the new `~/.hory/yourapp/` layout (config, cache, playlists).
+- First launch migrates leftover data from the previous unversioned `~/yourapp/` path when present.
 - Various other small tweaks
 
 ### CLI
 
-- `msc` / `optmusic` resolve config and cache from `~/.option/music/` the same way as Desktop.
+- `yourapp` / `yapp` resolve config and cache from `~/.hory/yourapp/` the same way as Desktop.
 - Various other small tweaks
 
 ## v0.1.2-beta · 21/07/2026

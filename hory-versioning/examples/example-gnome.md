@@ -1,17 +1,17 @@
 # Changelog
 
-We follow [Semantic Versioning](https://semver.org/) and [Keep a Changelog](https://keepachangelog.com/). optionTerm is a single GNOME surface.
+We follow [Semantic Versioning](https://semver.org/) and [Keep a Changelog](https://keepachangelog.com/). yourapp is a single GNOME surface.
 
 <details>
 <summary>To see more about versioning, expand this.</summary>
 
 Every version string starts with `v` (required), e.g. `v0.2.1-stable`, `v0.2.0-beta`.
 
-Here the installable surface is **GNOME** (GTK4 + libadwaita). Other Option apps swap in their own names the same way — e.g. **CLI**, **Desktop**, **Web** — whatever you actually ship.
+Here the installable surface is **GNOME** (GTK4 + libadwaita). Other apps swap in their own names the same way — e.g. **CLI**, **Desktop**, **Web** — whatever you actually ship.
 
 | Part | What you install | Example |
 | --- | --- | --- |
-| **GNOME** | `optionterm` desktop terminal | `v0.2.1-stable` |
+| **GNOME** | `yourapp` desktop terminal | `v0.2.1-stable` |
 
 With one surface there is no `m` in the tag and no per-surface sections — just the version notes.
 
@@ -49,7 +49,7 @@ Session restore depth, launch flags, bottom tabs and command presets. This versi
 Engine rewrite onto system VTE and a cleaner first-run config. This version was made for GNOME with a beta release channel on 31/07/2026 (v0.2.0-beta).
 
 - Terminal surface embeds stock VTE via `vte4` instead of `libghostty-vt` and a custom Cairo paint path — no Zig at build time.
-- First run writes built-in defaults only; Ghostty config import is gone. Existing optionTerm `config.toml` keys are kept.
+- First run writes built-in defaults only; Ghostty config import is gone. Existing yourapp `config.toml` keys are kept.
 - Search uses VTE regex find next/previous (match-count UI removed).
 - Session restore is layout + cwd only; scrollback dumps from ≤0.1.x are cleared on save/restore.
 - `TERM=xterm-256color` (was `xterm-ghostty`).
@@ -59,7 +59,7 @@ Engine rewrite onto system VTE and a cleaner first-run config. This version was 
 
 Program identity for nested CLIs, clipboard OSC 52, and optional scrollback persistence. This version was made for GNOME with a stable release channel on 31/07/2026 (v0.1.14).
 
-- `TERM_PROGRAM` / `TERM_PROGRAM_VERSION` on every PTY so tools can recognise optionTerm; `XTVERSION` includes the package version.
+- `TERM_PROGRAM` / `TERM_PROGRAM_VERSION` on every PTY so tools can recognise yourapp; `XTVERSION` includes the package version.
 - OSC 52 clipboard writes land in the GTK clipboard (or primary selection).
-- Optional `window.session_restore_scrollback` stores pane VT dumps under `~/.option/terminal/scrollback/` (off by default — history can hold secrets).
+- Optional `window.session_restore_scrollback` stores pane VT dumps under `~/.hory/yourapp/scrollback/` (off by default — history can hold secrets).
 - Various other small tweaks
