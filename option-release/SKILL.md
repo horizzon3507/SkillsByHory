@@ -5,7 +5,7 @@ description: Plan, cut, publish, and independently verify releases for Option-fa
 
 # Option Release
 
-Use this skill for the complete release lifecycle. Combine it with `$option-versioning` for changelog and tag semantics, and with `$option-aur-packaging` when AUR is a shipped surface.
+Use this skill for the complete release lifecycle. Combine it with `$hory-versioning` for changelog and tag semantics, and with `$option-aur-packaging` when AUR is a shipped surface.
 
 ## 1. Preflight and Surface Map
 
@@ -17,7 +17,7 @@ Use this skill for the complete release lifecycle. Combine it with `$option-vers
 
 ## 2. Choose the Release Shape
 
-Use `$option-versioning` and the closest existing example:
+Use `$hory-versioning` and the closest existing example:
 
 - Single surface: one version and surface-specific notes.
 - Multiple surfaces with real user-facing changes on both: use the mixed `m` form before the channel, such as `v0.2.10m-beta`, with heavier work first.

@@ -1,5 +1,5 @@
 ---
-name: option-versioning
+name: hory-versioning
 description: Apply Option-family changelog and versioning style (v tags, alpha/beta/stable channels, mixed m releases, surface sections, human summary lines). Use when creating or updating CHANGELOG.md / VERSIONING.md, cutting a release, or the user mentions Option-style versioning, channels, or mixed releases.
 ---
 

@@ -1,4 +1,4 @@
-# optionSkills
+# SkillsByHory
 
 Agent skills for the **Option** family (`optionTerm`, `optionMusic`, `optionFiles`, `opsh`, `optionSDK`, …).
 
@@ -10,33 +10,34 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 
 | Skill | What it does |
 |-------|----------------|
-| [`option-versioning`](option-versioning/) | Option-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
+| [`hory-versioning`](hory-versioning/) | Option-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
 | [`option-aur-packaging`](option-aur-packaging/) | Prepare, validate, migrate, and independently verify AUR packages, `PKGBUILD`, `.SRCINFO`, and package identities. |
 | [`option-release`](option-release/) | Plan, cut, publish, and independently verify releases across CLI, Desktop, GNOME, Web, registries, GitHub, and AUR. |
 | [`option-local-first`](option-local-first/) | Design local state, migrations, privacy boundaries, XDG paths, caches, sessions, and safe filesystem behavior. |
+| [`option-gitignore`](option-gitignore/) | Create, normalize, and audit `.gitignore` files across the family's Rust, Tauri, Web, and SQLite stacks. |
 
 ## Install
 
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-cp -a option-versioning option-aur-packaging option-release option-local-first ~/.agents/skills/
+cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore ~/.agents/skills/
 # or
-cp -a option-versioning option-aur-packaging option-release option-local-first ~/.cursor/skills/
+cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore ~/.cursor/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
 
 ```bash
-ln -s "$(pwd)/option-versioning" ~/.agents/skills/option-versioning
+ln -s "$(pwd)/hory-versioning" ~/.agents/skills/hory-versioning
 ```
 
 ## Layout
 
 ```text
-optionSkills/
+SkillsByHory/
   README.md
-  option-versioning/
+  hory-versioning/
     SKILL.md
     examples/
       example-multi-surface.md
