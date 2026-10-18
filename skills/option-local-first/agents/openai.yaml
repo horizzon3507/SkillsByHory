@@ -1,4 +1,0 @@
-interface:
-  display_name: "Option Local First"
-  short_description: "Keep Option apps local, private, and migratable"
-  default_prompt: "Use $option-local-first to design or migrate local state safely in an Option app."
