@@ -1,6 +1,7 @@
 ---
 name: option-gitignore
 description: Create, standardize, and audit .gitignore files for Option-family repos across Rust, Tauri, Web/Bun/Vite, Prisma/SQLite, and GNOME/GTK surfaces. Use when adding a .gitignore to a new repo, normalizing an existing one to Option conventions, checking for leaked secrets or tracked junk, or when the user mentions Option gitignore style.
+license: Apache-2.0
 ---
 
 # Option Gitignore

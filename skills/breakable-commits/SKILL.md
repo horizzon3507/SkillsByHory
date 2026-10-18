@@ -1,6 +1,7 @@
 ---
 name: breakable-commits
 description: Break one large update into a clean series of logical commits without spam. Use when the user asks to split a big change into multiple commits, commit "piece by piece", make atomic commits, or when a single commit would touch many files/features. Applies to pushes to GitHub (the user's), from 10 up to even 100 commits.
+license: Apache-2.0
 ---
 
 # Breakable commits

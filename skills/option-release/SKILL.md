@@ -1,6 +1,7 @@
 ---
 name: option-release
 description: Plan, cut, publish, and independently verify releases for Option-family projects across CLI, Desktop, GNOME, GTK, Web, Cargo, npm, GitHub Releases, and AUR. Use when bumping versions, creating CHANGELOG.md entries or tags, preparing mixed-surface releases, publishing artifacts, or checking whether a release actually reached its remote distribution channels.
+license: Apache-2.0
 ---
 
 # Option Release

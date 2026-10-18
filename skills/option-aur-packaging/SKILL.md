@@ -1,6 +1,7 @@
 ---
 name: option-aur-packaging
 description: Prepare, update, validate, migrate, and publish Arch User Repository packages for Option-family apps, including PKGBUILD, .SRCINFO, release-tarball hashes, package identity, GitHub Actions, and AUR rename workflows. Use when an Option app adds or changes AUR packaging, cuts a release distributed through AUR, changes binary or repository names, or needs independent verification of an AUR publication.
+license: Apache-2.0
 ---
 
 # Option AUR Packaging

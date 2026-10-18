@@ -1,6 +1,7 @@
 ---
 name: option-local-first
 description: Design, review, migrate, and validate local-first state for Option-family apps, including configuration, data, cache, sessions, filesystem behavior, privacy boundaries, XDG paths, schema migrations, and safe recovery. Use when adding persistence, choosing storage paths, migrating legacy state, integrating local files, handling secrets, or reviewing telemetry and network behavior.
+license: Apache-2.0
 ---
 
 # Option Local First
