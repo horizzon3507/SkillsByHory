@@ -1,6 +1,6 @@
 # SkillsByHory
 
-Agent skills for the **Option** family (`optionTerm`, `optionMusic`, `optionFiles`, `opsh`, `optionSDK`, …).
+Agent skills by **Hory** — general-purpose agent skills, local-first. No daemon, no telemetry.
 
 These are Cursor / Codex-style skills: folders with a `SKILL.md` plus optional examples. Point your agent skills path here, or copy individual skills into `~/.agents/skills/` / `~/.cursor/skills/`.
 
@@ -11,10 +11,6 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 | Skill | What it does |
 |-------|----------------|
 | [`hory-versioning`](skills/hory-versioning/) | Option-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
-| [`option-aur-packaging`](skills/option-aur-packaging/) | Prepare, validate, migrate, and independently verify AUR packages, `PKGBUILD`, `.SRCINFO`, and package identities. |
-| [`option-release`](skills/option-release/) | Plan, cut, publish, and independently verify releases across CLI, Desktop, GNOME, Web, registries, GitHub, and AUR. |
-| [`option-local-first`](skills/option-local-first/) | Design local state, migrations, privacy boundaries, XDG paths, caches, sessions, and safe filesystem behavior. |
-| [`option-gitignore`](skills/option-gitignore/) | Create, normalize, and audit `.gitignore` files across the family's Rust, Tauri, Web, and SQLite stacks. |
 | [`breakable-commits`](skills/breakable-commits/) | Split one update into a clean chain of logical commits (3 → up to 100) without spam; split existing big commits and push the series to GitHub. |
 
 ## Install
@@ -22,9 +18,7 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-cp -a skills/hory-versioning skills/option-aur-packaging skills/option-release skills/option-local-first skills/option-gitignore skills/breakable-commits ~/.agents/skills/
 # or
-cp -a skills/hory-versioning skills/option-aur-packaging skills/option-release skills/option-local-first skills/option-gitignore skills/breakable-commits ~/.cursor/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
