@@ -1,4 +1,0 @@
-interface:
-  display_name: "Option Gitignore"
-  short_description: "Standardize Option .gitignore files"
-  default_prompt: "Use $option-gitignore to create, normalize, or audit this repo's .gitignore in Option style."
