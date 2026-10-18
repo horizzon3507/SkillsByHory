@@ -10,23 +10,23 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Hory.
 
 | Skill | What it does |
 |-------|----------------|
-| [`hory-versioning`](hory-versioning/) | Hory-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
-| [`breakable-commits`](breakable-commits/) | Split one update into a clean chain of logical commits (3 → up to 100) without spam; split existing big commits and push the series to GitHub. |
+| [`hory-versioning`](skills/hory-versioning/) | Hory-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
+| [`breakable-commits`](skills/breakable-commits/) | Split one update into a clean chain of logical commits (3 → up to 100) without spam; split existing big commits and push the series to GitHub. |
 
 ## Install
 
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-cp -a hory-versioning breakable-commits ~/.agents/skills/
+cp -a skills/hory-versioning skills/breakable-commits ~/.agents/skills/
 # or
-cp -a hory-versioning breakable-commits ~/.cursor/skills/
+cp -a skills/hory-versioning skills/breakable-commits ~/.cursor/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
 
 ```bash
-ln -s "$(pwd)/hory-versioning" ~/.agents/skills/hory-versioning
+ln -s "$(pwd)/skills/hory-versioning" ~/.agents/skills/hory-versioning
 ```
 
 ## Layout
@@ -34,7 +34,7 @@ ln -s "$(pwd)/hory-versioning" ~/.agents/skills/hory-versioning
 ```text
 SkillsByHory/
  README.md
- hory-versioning/
+ skills/hory-versioning/
  SKILL.md
  examples/
  example-multi-surface.md
