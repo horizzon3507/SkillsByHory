@@ -15,15 +15,16 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 | [`option-release`](option-release/) | Plan, cut, publish, and independently verify releases across CLI, Desktop, GNOME, Web, registries, GitHub, and AUR. |
 | [`option-local-first`](option-local-first/) | Design local state, migrations, privacy boundaries, XDG paths, caches, sessions, and safe filesystem behavior. |
 | [`option-gitignore`](option-gitignore/) | Create, normalize, and audit `.gitignore` files across the family's Rust, Tauri, Web, and SQLite stacks. |
+| [`breakable-commits`](breakable-commits/) | Split one update into a clean chain of logical commits (3 → up to 100) without spam; split existing big commits and push the series to GitHub. |
 
 ## Install
 
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore ~/.agents/skills/
+cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore breakable-commits ~/.agents/skills/
 # or
-cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore ~/.cursor/skills/
+cp -a hory-versioning option-aur-packaging option-release option-local-first option-gitignore breakable-commits ~/.cursor/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
