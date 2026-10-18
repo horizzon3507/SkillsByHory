@@ -1,6 +1,6 @@
 # SkillsByHory
 
-Agent skills for the **Hory** family (`yourTerm`, `yourMusic`, `yourFiles`, `horysh`, `yourSDK`, …).
+Agent skills by **Hory** — general-purpose agent skills, local-first. No daemon, no telemetry.
 
 These are Cursor / Codex-style skills: folders with a `SKILL.md` plus optional examples. Point your agent skills path here, or copy individual skills into `~/.agents/skills/` / `~/.cursor/skills/`.
 
@@ -18,9 +18,7 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Hory.
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-cp -a skills/hory-versioning skills/breakable-commits ~/.agents/skills/
 # or
-cp -a skills/hory-versioning skills/breakable-commits ~/.cursor/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
