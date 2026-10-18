@@ -1,6 +1,7 @@
 ---
 name: hory-versioning
 description: Apply Hory-style changelog and versioning rules (v tags, alpha/beta/stable channels, mixed m releases, surface sections, human summary lines). Use when creating or updating CHANGELOG.md / VERSIONING.md, cutting a release, or the user mentions Hory-style versioning, channels, or mixed releases.
+license: Apache-2.0
 ---
 
 # Hory versioning
