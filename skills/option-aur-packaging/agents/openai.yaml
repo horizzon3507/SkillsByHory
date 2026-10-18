@@ -1,4 +1,0 @@
-interface:
-  display_name: "Option AUR Packaging"
-  short_description: "Package Option apps for Arch and AUR"
-  default_prompt: "Use $option-aur-packaging to prepare and verify an Option package for Arch and AUR."
