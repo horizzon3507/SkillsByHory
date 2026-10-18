@@ -1,4 +1,0 @@
-interface:
-  display_name: "Option Release"
-  short_description: "Ship Option releases end to end"
-  default_prompt: "Use $option-release to cut and verify an Option release across all shipped surfaces."
