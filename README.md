@@ -12,6 +12,10 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 |-------|----------------|
 | [`hory-versioning`](skills/hory-versioning/) | Option-style changelogs: `v` tags, channels, mixed `m` releases, surface sections. Examples for multi-surface, GNOME, and CLI apps. |
 | [`breakable-commits`](skills/breakable-commits/) | Split one update into a clean chain of logical commits (3 → up to 100) without spam; split existing big commits and push the series to GitHub. |
+| [`breakable-prs`](skills/breakable-prs/) | Split a big change into a sequence or stack of small PRs, each independently mergeable to main. |
+| [`breakable-issues`](skills/breakable-issues/) | Turn a feature or milestone into a small set of tracker issues with acceptance criteria and dependency order — tasklists over issue-spam. |
+| [`breakable-work`](skills/breakable-work/) | Orchestrator: plan a whole breakdown across issues → PRs → commits as one nested plan. |
+| [`bot-design-system`](skills/bot-design-system/) | Dark-minimalist bot design system: 2-line messaging pattern, clean vector UI iconography, dark/fintech palette, and anti-noise rules. |
 
 ## Install
 
