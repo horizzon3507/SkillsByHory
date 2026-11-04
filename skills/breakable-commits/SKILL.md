@@ -41,3 +41,5 @@ Turn one blob of work into a **chain of real commits** — each one compiling, m
 ## Examples
 
 See [examples/example-large-split.md](examples/example-large-split.md) for a chain plan of a 40+ commit large update, and [examples/example-simple-split.md](examples/example-simple-split.md) for a 4-commit simple one.
+
+Related: `breakable-prs` cuts the same work at merge boundaries, `breakable-issues` at value boundaries, `breakable-work` plans all three levels at once.
