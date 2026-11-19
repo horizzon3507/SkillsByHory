@@ -29,3 +29,6 @@ skills-lock.json
 /.tmp/
 
 # Project
+
+# Python
+__pycache__/
