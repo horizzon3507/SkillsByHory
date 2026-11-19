@@ -15,6 +15,7 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Option.
 | [`breakable-prs`](skills/breakable-prs/) | Split a big change into a sequence or stack of small PRs, each independently mergeable to main. |
 | [`breakable-issues`](skills/breakable-issues/) | Turn a feature or milestone into a small set of tracker issues with acceptance criteria and dependency order — tasklists over issue-spam. |
 | [`breakable-work`](skills/breakable-work/) | Orchestrator: plan a whole breakdown across issues → PRs → commits as one nested plan. |
+| [`code-video`](skills/code-video/) | Generate videos by writing code: Pillow/matplotlib frames encoded with ffmpeg, mirroring Claude's code-execution sandbox. Ships setup, render and review scripts. |
 | [`bot-design-system`](skills/bot-design-system/) | Dark-minimalist bot design system: 2-line messaging pattern, clean vector UI iconography, dark/fintech palette, and anti-noise rules. |
 
 ## Install
