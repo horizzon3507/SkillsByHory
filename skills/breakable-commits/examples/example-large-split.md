@@ -21,17 +21,17 @@ Bucket: **Large** → target ~25 commits (not padded).
 12. feat(desktop): bind settings UI to SettingsStore
 13. fix(desktop): preserve unknown keys on settings save
 14. refactor(desktop): remove old preferences serialization
-15. test(desktop): settings integration smoke
+15. test(desktop): cover settings integration smoke
 16. feat(sdk): expose SettingsStore in public SDK
 17. docs(sdk): document SettingsStore usage
-18. feat(core): SettingsStore schema v2 migration
+18. feat(core): migrate SettingsStore schema to v2
 19. fix(core): handle partial schema v2 upgrades
-20. test(core): migration edge cases from v1 profiles
+20. test(core): cover migration edge cases from v1 profiles
 21. chore: regen lockfiles after settings crate bump
 22. chore(yourterm): adopt SettingsStore defaults
 23. chore(yourmusic): adopt SettingsStore defaults
 24. docs: update README settings section
-25. chore: remaining dead-code cleanup from migration
+25. chore: remove remaining dead code from migration
 ```
 
 ## Why this works
@@ -40,4 +40,5 @@ Bucket: **Large** → target ~25 commits (not padded).
 - Per-surface sections keep ownership obvious (core/cli/desktop/sdk).
 - Lockfile + per-app adoption folds into single labelled commits, not one per file.
 - No `part N/M` numbering; each subject stands alone.
+- If step 18 dropped v1 support instead of migrating it, the subject would be `feat(core)!: migrate SettingsStore schema to v2` with a `BREAKING CHANGE: ...` footer — breaking changes stay visible in the chain, not hidden in chores.
 - Every step compiles: consumers wired before old structs removed.

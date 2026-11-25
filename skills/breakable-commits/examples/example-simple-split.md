@@ -10,7 +10,7 @@ Bucket: **Simple** → 4 commits.
 1. feat(cli): add --json argument plumbing (arg parser + struct field)
 2. feat(cli): emit JSON output for status command (serializer + flag branch)
 3. test(cli): cover --json for status and list (tests only, they use step 1+2)
-4. docs: document --json flag (README + changelog line)
+4. docs(cli): document --json flag (README + changelog line)
 ```
 
 ## Notes
