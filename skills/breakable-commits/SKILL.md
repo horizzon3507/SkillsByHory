@@ -1,6 +1,6 @@
 ---
 name: breakable-commits
-description: Break one large update into a clean series of logical commits without spam. Use when the user asks to split a big change into multiple commits, commit "piece by piece", make atomic commits, or when a single commit would touch many files/features. Applies to pushes to GitHub (the user's), from 10 up to even 100 commits.
+description: Break one large update into a clean series of logical commits without spam, using the Conventional Commits format. Use when the user asks to split a big change into multiple commits, commit "piece by piece", make atomic commits, or when a single commit would touch many files/features. Applies to pushes to GitHub (the user's), from 10 up to even 100 commits.
 license: Apache-2.0
 ---
 
@@ -28,7 +28,19 @@ Turn one blob of work into a **chain of real commits** — each one compiling, m
  - Mechanical change + hand-written change on the same lines → two commits (mechanical first).
  - Generated files, lockfiles: one commit, clearly labeled (`chore: regen lockfiles after X`).
 4. **Slicing an already-made commit** — soft-reset (`git reset --soft HEAD~1`), then stage per unit with `git add` of the planned files (or `git add -p` inside files). Never force-push over shared branches without asking.
-5. **Message style** — conventional-commit prefixes (`feat:`, `fix:`, `refactor:`, `test:`, `docs:`, `chore:`), imperative subject ≤ 72 chars, body only when it clarifies. No numbering in subjects (`feat: part 3/17` is spam — the history IS the list).
+5. **Message style** — write every commit in [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) format:
+ ```text
+ <type>[optional scope][!]: <description>
+
+ [optional body]
+
+ [optional footer(s)]
+ ```
+ - Use `feat` for new behavior and `fix` for bug fixes; otherwise pick the closest type: `refactor`, `test`, `docs`, `chore`, `perf`, `build`, `ci`, or `style`.
+ - Add a scope when a module or surface makes the intent clearer (`feat(cli): ...`); omit it for repo-wide changes.
+ - Keep the description imperative and ≤ 72 chars. Start the body one blank line later, and only when it clarifies.
+ - Mark breaking changes with `!` after the type/scope or a `BREAKING CHANGE: ...` footer; use both when the subject alone does not explain the break.
+ - Use git-trailer-style footers such as `Refs: #123` when needed. No numbering in subjects (`feat: part 3/17` is spam — the history IS the list).
 6. **Push** — push the chain as one block. If the user asked to push to their GitHub, push to their remote (`origin` or whichever the user names).
 
 ## Anti-spam checklist (hard rules)
