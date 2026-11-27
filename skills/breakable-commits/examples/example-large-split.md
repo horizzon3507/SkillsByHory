@@ -28,8 +28,8 @@ Bucket: **Large** → target ~25 commits (not padded).
 19. fix(core): handle partial schema v2 upgrades
 20. test(core): cover migration edge cases from v1 profiles
 21. chore: regen lockfiles after settings crate bump
-22. chore(yourterm): adopt SettingsStore defaults
-23. chore(yourmusic): adopt SettingsStore defaults
+22. chore(terminal): adopt SettingsStore defaults
+23. chore(music): adopt SettingsStore defaults
 24. docs: update README settings section
 25. chore: remove remaining dead code from migration
 ```

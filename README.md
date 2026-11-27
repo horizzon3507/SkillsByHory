@@ -4,8 +4,6 @@ Agent skills by **Hory** — general-purpose agent skills, local-first. No daemo
 
 These are Cursor / Codex-style skills: folders with a `SKILL.md` plus optional examples. Point your agent skills path here, or copy individual skills into `~/.agents/skills/` / `~/.cursor/skills/`.
 
-Local-first. No daemon. No telemetry. Same spirit as the rest of Hory.
-
 ## Skills
 
 | Skill | What it does |
@@ -21,7 +19,7 @@ Local-first. No daemon. No telemetry. Same spirit as the rest of Hory.
 **Copy into your personal skills dir** (picks up automatically in Cursor):
 
 ```bash
-# or
+cp -a skills/hory-versioning skills/breakable-commits skills/breakable-prs skills/breakable-issues skills/breakable-work ~/.agents/skills/
 ```
 
 **Or** keep this repo as the source of truth and symlink:
@@ -52,4 +50,4 @@ SkillsByHory/
 
 ## License
 
-Apache-2.0 — same as the Hory family apps, unless a skill folder says otherwise.
+Apache-2.0 unless a skill folder says otherwise.
