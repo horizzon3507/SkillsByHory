@@ -13,7 +13,7 @@ These are Cursor / Codex-style skills: folders with a `SKILL.md` plus optional e
 | [`breakable-prs`](skills/breakable-prs/) | Split a big change into a sequence or stack of small PRs, each independently mergeable to main. |
 | [`breakable-issues`](skills/breakable-issues/) | Turn a feature or milestone into a small set of tracker issues with acceptance criteria and dependency order — tasklists over issue-spam. |
 | [`breakable-work`](skills/breakable-work/) | Orchestrator: plan a whole breakdown across issues → PRs → commits as one nested plan. |
-| [`code-video`](skills/code-video/) | Generate videos by writing code: Pillow/matplotlib frames encoded with ffmpeg, mirroring Claude's code-execution sandbox. Ships setup, render and review scripts. |
+| [`code-video`](skills/code-video/) | Generate art-directed videos by writing code: visual direction workflow, Pillow/matplotlib frames encoded with ffmpeg, setup/render/review scripts and design helpers. |
 
 ## Install
 
